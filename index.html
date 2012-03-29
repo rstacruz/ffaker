@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+  <meta charset='utf-8' />
+  <title>FFaker - Fast Ruby data Faker</title>
+  <style>
+    html, body {
+      margin: 0
+      padding: 0; }
+    
+    html {
+      color: #333;
+      background: #fafafa; }
+    
+    body, input, textarea, table {
+      font-family: sans-serif;
+      font-size: 11pt;
+      line-height: 1.5; }
+    
+    /* Sections */
+    section {
+      margin: 0 auto;
+      padding: 40px 0; }
+    
+    section h2 {
+      text-align: center;
+      margin: 30px 0;
+      padding: 0 0 15px 0;
+      font-weight: 100;
+      font-size: 16pt; }
+    
+    section:nth-child(even) {
+      background: #f8f8f4; }
+    
+    /* Each method */
+    article {
+      text-shadow: 1px 1px 1px rgba(250, 250, 250, 0.2);
+    
+      margin: 15px 0;
+      overflow: hidden; }
+    
+    article h3, article ul {
+      box-sizing: border-box;
+    
+      float: left;
+      display: block;
+      margin: 0; }
+    
+    article h3 {
+      margin-top: 5px;
+    
+      font-weight: normal;
+      font-family: monaco, monospace;
+      position: relative;
+    
+      padding: 0 20px;
+    
+      width: 35%;
+      margin-left: 15%;
+      text-align: right;
+      font-size: 11pt; }
+    
+    article h3 .module {
+      color: #666; }
+    
+    article h3 .method {
+      background: #7bd;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+      margin: 0 0 0 3px;
+      padding: 2px 5px; }
+    
+    article ul {
+      padding: 5px;
+      padding-bottom: 0;
+      width: 50%; }
+    
+    article ul, article li {
+      list-style-type: none; }
+    
+    article li {
+      font-style: italic;
+      font-family: georgia, serif;
+    
+      margin-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20%;
+    
+      box-sizing: border-box;
+      color: #aaa; }
+    
+    article li:first-child {
+      color: #448; }
+    
+    article li:first-child:before {
+      margin-left: -30px;
+      float: left;
+      display: inline-block;
+    
+      font-family: monospace;
+      margin-top: 3px;
+      font-style: normal;
+      font-size: 10pt;
+      content: '=> ';
+      color: #66a; }
+    
+    article.more {
+      display: none; }
+  </style>
+</html>
+<body>
+  <section>
+    <h2>Faker::Address</h2>
+    <article id='Faker_Address_city'>
+      <h3><span class='module'>Faker::Address</span><span class='method'>.city</span></h3>
+      <ul>
+        <li>"Dandrestad"</li>
+        <li>"Kaseyton"</li>
+      </ul>
+    </article>
+    <article id='Faker_Address_street_name'>
+      <h3><span class='module'>Faker::Address</span><span class='method'>.street_name</span></h3>
+      <ul>
+        <li>"Jacobs Burgs"</li>
+        <li>"Ima Curve"</li>
+      </ul>
+    </article>
+    <article id='Faker_Address_street_address'>
+      <h3><span class='module'>Faker::Address</span><span class='method'>.street_address</span></h3>
+      <ul>
+        <li>"959 Runte Lake"</li>
+        <li>"146 Hartmann Brook"</li>
+      </ul>
+    </article>
+    <article id='Faker_Address_secondary_address'>
+      <h3><span class='module'>Faker::Address</span><span class='method'>.secondary_address</span></h3>
+      <ul>
+        <li>"Suite 308"</li>
+        <li>"Suite 002"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Company</h2>
+    <article id='Faker_Company_name'>
+      <h3><span class='module'>Faker::Company</span><span class='method'>.name</span></h3>
+      <ul>
+        <li>"McLaughlin, Howe and Champlin"</li>
+        <li>"Homenick LLC"</li>
+      </ul>
+    </article>
+    <article id='Faker_Company_suffix'>
+      <h3><span class='module'>Faker::Company</span><span class='method'>.suffix</span></h3>
+      <ul>
+        <li>"Inc"</li>
+        <li>"and Sons"</li>
+      </ul>
+    </article>
+    <article id='Faker_Company_catch_phrase'>
+      <h3><span class='module'>Faker::Company</span><span class='method'>.catch_phrase</span></h3>
+      <ul>
+        <li>"Optional modular leverage"</li>
+        <li>"Self-enabling multi-state local area network"</li>
+      </ul>
+    </article>
+    <article id='Faker_Company_bs'>
+      <h3><span class='module'>Faker::Company</span><span class='method'>.bs</span></h3>
+      <ul>
+        <li>"reinvent ubiquitous relationships"</li>
+        <li>"generate one-to-one synergies"</li>
+      </ul>
+    </article>
+    <article id='Faker_Company_position'>
+      <h3><span class='module'>Faker::Company</span><span class='method'>.position</span></h3>
+      <ul>
+        <li>"Executive Secretary"</li>
+        <li>"Department President"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Education</h2>
+    <article id='Faker_Education_school'>
+      <h3><span class='module'>Faker::Education</span><span class='method'>.school</span></h3>
+      <ul>
+        <li>"University of Maryland"</li>
+        <li>"College of Michigan"</li>
+      </ul>
+    </article>
+    <article id='Faker_Education_degree'>
+      <h3><span class='module'>Faker::Education</span><span class='method'>.degree</span></h3>
+      <ul>
+        <li>"Bachelor of Music in Financial Architecture"</li>
+        <li>"Master of Arts in Social Education"</li>
+      </ul>
+    </article>
+    <article id='Faker_Education_degree_short'>
+      <h3><span class='module'>Faker::Education</span><span class='method'>.degree_short</span></h3>
+      <ul>
+        <li>"MD in Medical Accountancy"</li>
+        <li>"DPhil in Social Accountancy"</li>
+      </ul>
+    </article>
+    <article id='Faker_Education_major'>
+      <h3><span class='module'>Faker::Education</span><span class='method'>.major</span></h3>
+      <ul>
+        <li>"Marketing Management"</li>
+        <li>"Industrial Science"</li>
+      </ul>
+    </article>
+    <article id='Faker_Education_school_name'>
+      <h3><span class='module'>Faker::Education</span><span class='method'>.school_name</span></h3>
+      <ul>
+        <li>"Greenpoint"</li>
+        <li>"Riverville"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Geolocation</h2>
+    <article id='Faker_Geolocation_lat'>
+      <h3><span class='module'>Faker::Geolocation</span><span class='method'>.lat</span></h3>
+      <ul>
+        <li>40.5998084142575</li>
+        <li>33.5775667696072</li>
+      </ul>
+    </article>
+    <article id='Faker_Geolocation_lng'>
+      <h3><span class='module'>Faker::Geolocation</span><span class='method'>.lng</span></h3>
+      <ul>
+        <li>-75.110396933127</li>
+        <li>-115.120716573</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Internet</h2>
+    <article id='Faker_Internet_email'>
+      <h3><span class='module'>Faker::Internet</span><span class='method'>.email</span></h3>
+      <ul>
+        <li>"trudie_nader@mohr.info"</li>
+        <li>"electa.robel@kub.com"</li>
+      </ul>
+    </article>
+    <article id='Faker_Internet_user_name'>
+      <h3><span class='module'>Faker::Internet</span><span class='method'>.user_name</span></h3>
+      <ul>
+        <li>"betty.anderson"</li>
+        <li>"eddie"</li>
+      </ul>
+    </article>
+    <article id='Faker_Internet_domain_name'>
+      <h3><span class='module'>Faker::Internet</span><span class='method'>.domain_name</span></h3>
+      <ul>
+        <li>"jacobs.ca"</li>
+        <li>"okuneva.co.uk"</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Internet_disposable_email'>
+      <h3><span class='module'>Faker::Internet</span><span class='method'>.disposable_email</span></h3>
+      <ul>
+        <li>"london_zieme@suremail.info"</li>
+        <li>"zita@safetymail.info"</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Internet_free_email'>
+      <h3><span class='module'>Faker::Internet</span><span class='method'>.free_email</span></h3>
+      <ul>
+        <li>"wendell.brown@gmail.com"</li>
+        <li>"garret.durgan@yahoo.com"</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Internet_domain_word'>
+      <h3><span class='module'>Faker::Internet</span><span class='method'>.domain_word</span></h3>
+      <ul>
+        <li>"runolfsson"</li>
+        <li>"walsh"</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Internet_domain_suffix'>
+      <h3><span class='module'>Faker::Internet</span><span class='method'>.domain_suffix</span></h3>
+      <ul>
+        <li>"us"</li>
+        <li>"name"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Job</h2>
+    <article id='Faker_Job_title'>
+      <h3><span class='module'>Faker::Job</span><span class='method'>.title</span></h3>
+      <ul>
+        <li>"Regional Marketing Director"</li>
+        <li>"Global Identity Representative"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Lorem</h2>
+    <article id='Faker_Lorem_word'>
+      <h3><span class='module'>Faker::Lorem</span><span class='method'>.word</span></h3>
+      <ul>
+        <li>"id"</li>
+        <li>"commodi"</li>
+      </ul>
+    </article>
+    <article id='Faker_Lorem_sentence'>
+      <h3><span class='module'>Faker::Lorem</span><span class='method'>.sentence</span></h3>
+      <ul>
+        <li>"Hic eligendi cum eaque eos non repellat consequatur."</li>
+        <li>"Culpa minima qui debitis et quae velit nihil dolor."</li>
+      </ul>
+    </article>
+    <article id='Faker_Lorem_paragraph'>
+      <h3><span class='module'>Faker::Lorem</span><span class='method'>.paragraph</span></h3>
+      <ul>
+        <li>Id at cumque autem rem amet aut ut ea. Est saepe minus molestiae quo placeat. Et nesciunt sunt distinctio. Iure autem dolorem et totam consequatur qui...</li>
+        <li>"Et in beatae aut. Voluptas iste placeat et explicabo. Ut modi recusandae fugit."</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Lorem_words'>
+      <h3><span class='module'>Faker::Lorem</span><span class='method'>.words(4)</span></h3>
+      <ul>
+        <li>["et", "qui", "et", "et"]</li>
+        <li>["ea", "laborum", "deserunt", "adipisci"]</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Lorem_sentence'>
+      <h3><span class='module'>Faker::Lorem</span><span class='method'>.sentence(5)</span></h3>
+      <ul>
+        <li>"Quo voluptatum consequuntur omnis quo aperiam voluptatem est autem eum."</li>
+        <li>"Neque iusto et libero a."</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Lorem_sentences'>
+      <h3><span class='module'>Faker::Lorem</span><span class='method'>.sentences(3)</span></h3>
+      <ul>
+        <li>["Consequatur nulla porro quam quod quasi ipsa esse.", "Odio officiis et et.", "Voluptas in fugit ut."]</li>
+        <li>"Accusantium quibusdam cumque possimus voluptates eum odio aut excepturi.", "Nisi eveniet rerum eos.", "Quam non praesentium totam dicta quaerat place...</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Lorem_paragraphs'>
+      <h3><span class='module'>Faker::Lorem</span><span class='method'>.paragraphs(3)</span></h3>
+      <ul>
+        <li>"Est aliquid aliquam laudantium et quis sapiente libero. In voluptates voluptatem placeat eius ipsa quia. Ducimus voluptatem nisi ipsum.", "Ullam even...</li>
+        <li>"Vero placeat ut voluptate soluta hic et nobis. Fugiat consequatur fugit nemo vel itaque et. Adipisci eligendi ipsum ea sit. Natus quibusdam quo qui e...</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::HipsterIpsum</h2>
+    <article id='Faker_HipsterIpsum_paragraph'>
+      <h3><span class='module'>Faker::HipsterIpsum</span><span class='method'>.paragraph</span></h3>
+      <ul>
+        <li>Messenger bag shoreditch mixtape freegan twee vegan pbr helvetica. Cliche portland irony stumptown quinoa retro put a bird on it organic gluten-free. ...</li>
+        <li>Echo park fanny pack aesthetic +1. Photo booth cred synth austin mixtape. American apparel dreamcatcher portland food truck ethical lomo cliche. Synth...</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::HTMLIpsum</h2>
+    <article id='Faker_HTMLIpsum_body'>
+      <h3><span class='module'>Faker::HTMLIpsum</span><span class='method'>.body</span></h3>
+      <ul>
+        <li>&lt;h1>Blanditiis ut&lt;/h1>&lt;p>&lt;a href=\"#odit\" title=\"Eos dolore\">Eveniet corporis&lt;/a> Autem maxime quia a tempora placeat. Natus et iste...</li>
+        <li>&lt;h1>Et similique&lt;/h1>&lt;p>Eligendi enim cum sint nisi quas officia a. Nam quo esse quas. Ut et placeat necessitatibus aut dolorum. Aut officia ...</li>
+      </ul>
+    </article>
+    <article id='Faker_HTMLIpsum_table'>
+      <h3><span class='module'>Faker::HTMLIpsum</span><span class='method'>.table</span></h3>
+      <ul>
+        <li>&lt;table>\n      &lt;thead>\n      &lt;tr>\n      &lt;th>Maiores&lt;/th>\n      &lt;th>Corporis&lt;/th>\n      &lt;th>Dicta&lt;/th>\n      &lt;th>Est...</li>
+        <li>&lt;table>\n      &lt;thead>\n      &lt;tr>\n      &lt;th>Voluptatum&lt;/th>\n      &lt;th>Molestiae&lt;/th>\n      &lt;th>Vero&lt;/th>\n      &lt;th>...</li>
+      </ul>
+    </article>
+    <article id='Faker_HTMLIpsum_fancy_string'>
+      <h3><span class='module'>Faker::HTMLIpsum</span><span class='method'>.fancy_string</span></h3>
+      <ul>
+        <li>&lt;a href=\"#ut\" title=\"Ipsum blanditiis\">Unde aliquam&lt;/a> &lt;em>Aut omnis impedit velit id dolorem qui. Nulla consequatur illo porro. Et null...</li>
+        <li>&lt;em>Fugit labore neque illum id. Asperiores esse magni ipsum est veritatis dolore laborum nesciunt. Doloribus illum tempora non aliquid nobis dolor...</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Name</h2>
+    <article id='Faker_Name_name'>
+      <h3><span class='module'>Faker::Name</span><span class='method'>.name</span></h3>
+      <ul>
+        <li>"Miss Victor Wiegand"</li>
+        <li>"Demarco Marquardt"</li>
+      </ul>
+    </article>
+    <article id='Faker_Name_first_name'>
+      <h3><span class='module'>Faker::Name</span><span class='method'>.first_name</span></h3>
+      <ul>
+        <li>"Jeffrey"</li>
+        <li>"Alize"</li>
+      </ul>
+    </article>
+    <article id='Faker_Name_last_name'>
+      <h3><span class='module'>Faker::Name</span><span class='method'>.last_name</span></h3>
+      <ul>
+        <li>"Wiza"</li>
+        <li>"Lakin"</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Name_prefix'>
+      <h3><span class='module'>Faker::Name</span><span class='method'>.prefix</span></h3>
+      <ul>
+        <li>"Mrs."</li>
+        <li>"Ms."</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_Name_suffix'>
+      <h3><span class='module'>Faker::Name</span><span class='method'>.suffix</span></h3>
+      <ul>
+        <li>"II"</li>
+        <li>"I"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::PhoneNumber</h2>
+    <article id='Faker_PhoneNumber_phone_number'>
+      <h3><span class='module'>Faker::PhoneNumber</span><span class='method'>.phone_number</span></h3>
+      <ul>
+        <li>"1-206-599-8307 x19475"</li>
+        <li>"360-799-1382"</li>
+      </ul>
+    </article>
+    <article id='Faker_PhoneNumber_short_phone_number'>
+      <h3><span class='module'>Faker::PhoneNumber</span><span class='method'>.short_phone_number</span></h3>
+      <ul>
+        <li>"177-214-2123"</li>
+        <li>"131-321-8426"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::Product</h2>
+    <article id='Faker_Product_brand'>
+      <h3><span class='module'>Faker::Product</span><span class='method'>.brand</span></h3>
+      <ul>
+        <li>"Phuncewood"</li>
+        <li>"Brynefunc"</li>
+      </ul>
+    </article>
+    <article id='Faker_Product_product_name'>
+      <h3><span class='module'>Faker::Product</span><span class='method'>.product_name</span></h3>
+      <ul>
+        <li>"Digital Amplifier"</li>
+        <li>"Air Case"</li>
+      </ul>
+    </article>
+    <article id='Faker_Product_product'>
+      <h3><span class='module'>Faker::Product</span><span class='method'>.product</span></h3>
+      <ul>
+        <li>"Trieffe Audible Controller"</li>
+        <li>"Briockforge Input Video Tuner"</li>
+      </ul>
+    </article>
+    <article id='Faker_Product_model'>
+      <h3><span class='module'>Faker::Product</span><span class='method'>.model</span></h3>
+      <ul>
+        <li>"W74"</li>
+        <li>"ME-2807"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::NameCN</h2>
+    <article id='Faker_NameCN_name'>
+      <h3><span class='module'>Faker::NameCN</span><span class='method'>.name</span></h3>
+      <ul>
+        <li>勇宸韩</li>
+        <li>彦行仲</li>
+      </ul>
+    </article>
+    <article id='Faker_NameCN_last_first'>
+      <h3><span class='module'>Faker::NameCN</span><span class='method'>.last_first</span></h3>
+      <ul>
+        <li>铁廷霖</li>
+        <li>程辛绮</li>
+      </ul>
+    </article>
+    <article id='Faker_NameCN_first_name'>
+      <h3><span class='module'>Faker::NameCN</span><span class='method'>.first_name</span></h3>
+      <ul>
+        <li>明惟</li>
+        <li>裕吉</li>
+      </ul>
+    </article>
+    <article id='Faker_NameCN_last_name'>
+      <h3><span class='module'>Faker::NameCN</span><span class='method'>.last_name</span></h3>
+      <ul>
+        <li>务</li>
+        <li>金</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::NameDE</h2>
+    <article id='Faker_NameDE_name'>
+      <h3><span class='module'>Faker::NameDE</span><span class='method'>.name</span></h3>
+      <ul>
+        <li>Tilo Meier</li>
+        <li>Laila Vogel</li>
+      </ul>
+    </article>
+    <article id='Faker_NameDE_first_name'>
+      <h3><span class='module'>Faker::NameDE</span><span class='method'>.first_name</span></h3>
+      <ul>
+        <li>Enrico</li>
+        <li>Alisha</li>
+      </ul>
+    </article>
+    <article id='Faker_NameDE_last_name'>
+      <h3><span class='module'>Faker::NameDE</span><span class='method'>.last_name</span></h3>
+      <ul>
+        <li>Schulz</li>
+        <li>Albrecht</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameDE_prefix'>
+      <h3><span class='module'>Faker::NameDE</span><span class='method'>.prefix</span></h3>
+      <ul>
+        <li>Frau</li>
+        <li>Prof.</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::NameJA</h2>
+    <article id='Faker_NameJA_name'>
+      <h3><span class='module'>Faker::NameJA</span><span class='method'>.name</span></h3>
+      <ul>
+        <li>颯土屋</li>
+        <li>亮長谷川</li>
+      </ul>
+    </article>
+    <article id='Faker_NameJA_last_first'>
+      <h3><span class='module'>Faker::NameJA</span><span class='method'>.last_first</span></h3>
+      <ul>
+        <li>名嘉真マサ</li>
+        <li>河本菜々子</li>
+      </ul>
+    </article>
+    <article id='Faker_NameJA_first_name'>
+      <h3><span class='module'>Faker::NameJA</span><span class='method'>.first_name</span></h3>
+      <ul>
+        <li>陽子</li>
+        <li>大翔</li>
+      </ul>
+    </article>
+    <article id='Faker_NameJA_last_name'>
+      <h3><span class='module'>Faker::NameJA</span><span class='method'>.last_name</span></h3>
+      <ul>
+        <li>落合</li>
+        <li>片渕</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::NameRU</h2>
+    <article id='Faker_NameRU_name'>
+      <h3><span class='module'>Faker::NameRU</span><span class='method'>.name</span></h3>
+      <ul>
+        <li>Щиконикова Маргарита Иннокентиевна</li>
+        <li>Изольда Андреева</li>
+      </ul>
+    </article>
+    <article id='Faker_NameRU_last_name'>
+      <h3><span class='module'>Faker::NameRU</span><span class='method'>.last_name</span></h3>
+      <ul>
+        <li>Черторыгина</li>
+        <li>Ачаповская</li>
+      </ul>
+    </article>
+    <article id='Faker_NameRU_first_name'>
+      <h3><span class='module'>Faker::NameRU</span><span class='method'>.first_name</span></h3>
+      <ul>
+        <li>Василиса</li>
+        <li>Нонна</li>
+      </ul>
+    </article>
+    <article id='Faker_NameRU_patronymic'>
+      <h3><span class='module'>Faker::NameRU</span><span class='method'>.patronymic</span></h3>
+      <ul>
+        <li>Кириллович</li>
+        <li>Филипповна</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameRU_name_male'>
+      <h3><span class='module'>Faker::NameRU</span><span class='method'>.name(:male)</span></h3>
+      <ul>
+        <li>Савва Карнеичев</li>
+        <li>Скалецкий Спартак Демьянович</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameRU_name_female'>
+      <h3><span class='module'>Faker::NameRU</span><span class='method'>.name(:female)</span></h3>
+      <ul>
+        <li>Когорева Лариса Мартиновна</li>
+        <li>Агнесса Елешенкова</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::NameSN</h2>
+    <article id='Faker_NameSN_name_sn'>
+      <h3><span class='module'>Faker::NameSN</span><span class='method'>.name_sn</span></h3>
+      <ul>
+        <li>Marème Sagna</li>
+        <li>Salamata Diao</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameSN_name_male'>
+      <h3><span class='module'>Faker::NameSN</span><span class='method'>.name_male</span></h3>
+      <ul>
+        <li>Daouda Badji</li>
+        <li>Issa Sock</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameSN_name_female'>
+      <h3><span class='module'>Faker::NameSN</span><span class='method'>.name_female</span></h3>
+      <ul>
+        <li>Absa Diakhaté</li>
+        <li>ndeye Tabara Dramé</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameSN_first_name_male'>
+      <h3><span class='module'>Faker::NameSN</span><span class='method'>.first_name_male</span></h3>
+      <ul>
+        <li>Albouri</li>
+        <li>Ndiankou</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameSN_first_name_female'>
+      <h3><span class='module'>Faker::NameSN</span><span class='method'>.first_name_female</span></h3>
+      <ul>
+        <li>Siga</li>
+        <li>Akinumelob</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameSN_prefix_male'>
+      <h3><span class='module'>Faker::NameSN</span><span class='method'>.prefix_male</span></h3>
+      <ul>
+        <li>pape</li>
+        <li>pape</li>
+      </ul>
+    </article>
+    <article class='more' id='Faker_NameSN_prefix_female'>
+      <h3><span class='module'>Faker::NameSN</span><span class='method'>.prefix_female</span></h3>
+      <ul>
+        <li>ndeye</li>
+        <li>ndeye</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::PhoneNumberAU</h2>
+    <article id='Faker_PhoneNumberAU_phone_number'>
+      <h3><span class='module'>Faker::PhoneNumberAU</span><span class='method'>.phone_number</span></h3>
+      <ul>
+        <li>"(07) 5510 8998"</li>
+        <li>"0401 766 225"</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h2>Faker::PhoneNumberSN</h2>
+    <article id='Faker_PhoneNumberSN_phone_number'>
+      <h3><span class='module'>Faker::PhoneNumberSN</span><span class='method'>.phone_number</span></h3>
+      <ul>
+        <li>"33-864-47-28"</li>
+        <li>"33-824-33-57"</li>
+      </ul>
+    </article>
+  </section>
+</body>
